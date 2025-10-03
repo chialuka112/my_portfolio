@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css";
-
+import imag from "../../assets/grok_image_xlfuwbc.jpg"
+import Resume from "../../assets/Beginner_FullStack_Resume (1).pdf"
 const Home = () => {
   const technologies = [
     {
@@ -36,8 +37,8 @@ const Home = () => {
 
   const handleDownloadCV = () => {
     const link = document.createElement("a");
-    link.href = "/path-to-your-cv.pdf";
-    link.download = "My_CV.pdf";
+    link.href = Resume;
+    link.download = "My_resume.pdf";
     link.click();
   };
 
@@ -50,7 +51,7 @@ const Home = () => {
           <div className="profile-wrapper">
             <div className="profile-gradient-border">
               <img
-                src="https://via.placeholder.com/200"
+                src={imag}
                 alt="Profile"
                 className="profile-img"
               />
