@@ -1,0 +1,48 @@
+
+.expe-title{
+  color: rgb(40, 128, 158);
+  display: flex;
+  justify-content: center;
+}
+
+.expe-writeup{
+  color: white;
+  position: relative;
+  top: 15px;
+  left: 200px;
+  font-size: 20px;
+}
+.expe-p{
+  position: relative;
+  margin-top: 30px;
+  font-weight: 400;
+}
+.expe-list{
+display: flex;
+flex-direction: column;
+gap: 25px;
+  color: darkgray;
+  
+}
+@media (max-width:768px) {
+  .expe{
+    gap:50px;
+    margin: 20px 70px;
+    align-items: start;
+  }
+  .expe h2{
+    padding: 0;
+        font-size: 40px;
+        font-weight: 600;
+    }
+  .expe-p{
+    font-size: 18px;
+    position: relative;
+    right: 188px;
+  }
+  .expe-list{
+    font-size: 18px;
+    position: relative;
+    right: 188px;
+  }
+}

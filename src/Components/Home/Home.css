@@ -1,0 +1,390 @@
+/* ============================================
+   HOME PAGE - COMPLETE STYLES
+   ============================================ */
+
+.home-page {
+  background-color: #1a1a1a;
+  min-height: 100vh;
+  color: white;
+}
+
+/* ============================================
+   HERO SECTION
+   ============================================ */
+
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px 60px;
+}
+
+.hero-content {
+  max-width: 900px;
+  text-align: center;
+}
+
+/* ============================================
+   PROFILE IMAGE WITH GRADIENT BORDER
+   ============================================ */
+
+.profile-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.profile-gradient-border {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 25%, #c44569 50%, #a855f7 75%, #9333ea 100%);
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: rotate-gradient 8s linear infinite;
+}
+
+@keyframes rotate-gradient {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #1a1a1a;
+}
+
+/* ============================================
+   HERO HEADING
+   ============================================ */
+
+.hero-heading {
+  font-size: 56px;
+  font-weight: 700;
+  color: white;
+  margin: 0 0 30px 0;
+  line-height: 1.2;
+}
+
+.text-orange {
+  color: #ff6b6b;
+}
+
+.text-purple {
+  color: #a855f7;
+}
+
+/* ============================================
+   HERO DESCRIPTION
+   ============================================ */
+
+.hero-description {
+  font-size: 16px;
+  color: #b8b8b8;
+  line-height: 1.8;
+  margin: 0 0 40px 0;
+  font-weight: 300;
+}
+
+/* ============================================
+   ACTION BUTTONS
+   ============================================ */
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+}
+
+.btn {
+  padding: 15px 35px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.btn-white {
+  background-color: white;
+  color: #1a1a1a;
+}
+
+.btn-white:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+}
+
+.btn-outlined {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.btn-outlined:hover {
+  background-color: white;
+  color: #1a1a1a;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+}
+
+/* ============================================
+   EXPERIENCE SECTION
+   ============================================ */
+
+.experience-section {
+  padding: 60px 20px 80px;
+  text-align: center;
+}
+
+.experience-title {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: #888;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+/* ============================================
+   TECH ICONS GRID
+   ============================================ */
+
+.tech-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.tech-item {
+  position: relative;
+  cursor: pointer;
+}
+
+.tech-icon-container {
+  width: 70px;
+  height: 70px;
+  background-color: #2a2a2a;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.tech-icon-container:hover {
+  transform: translateY(-5px) scale(1.05);
+  background-color: #333;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.tech-icon-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: brightness(0.9);
+  transition: filter 0.3s ease;
+}
+
+.tech-icon-container:hover .tech-icon-image {
+  filter: brightness(1.1);
+}
+
+/* ============================================
+   TECH NAME TOOLTIP
+   ============================================ */
+
+.tech-name {
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 10;
+}
+
+.tech-item:hover .tech-name {
+  opacity: 1;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN - TABLET
+   ============================================ */
+
+@media (max-width: 768px) {
+  .hero-heading {
+    font-size: 40px;
+  }
+
+  .hero-description {
+    font-size: 14px;
+  }
+
+  .hero-description br {
+    display: none;
+  }
+
+  .profile-gradient-border {
+    width: 160px;
+    height: 160px;
+  }
+
+  .btn {
+    padding: 12px 28px;
+    font-size: 14px;
+  }
+
+  .tech-grid {
+    gap: 30px;
+  }
+
+  .tech-icon-container {
+    width: 60px;
+    height: 60px;
+    padding: 12px;
+  }
+
+  .experience-section {
+    padding: 40px 20px 60px;
+  }
+}
+
+/* ============================================
+   RESPONSIVE DESIGN - MOBILE
+   ============================================ */
+
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 60px 15px 40px;
+  }
+
+  .hero-heading {
+    font-size: 32px;
+  }
+
+  .hero-description {
+    font-size: 13px;
+    padding: 0 10px;
+  }
+
+  .profile-gradient-border {
+    width: 140px;
+    height: 140px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .tech-grid {
+    gap: 20px;
+  }
+
+  .tech-icon-container {
+    width: 55px;
+    height: 55px;
+    padding: 10px;
+  }
+
+  .experience-title {
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+  }
+
+  .tech-name {
+    font-size: 11px;
+    padding: 5px 10px;
+  }
+}
+
+/* ============================================
+   ADDITIONAL ANIMATIONS
+   ============================================ */
+
+/* Fade in animation for hero content */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-content > * {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.hero-content > *:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.hero-content > *:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.hero-content > *:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.hero-content > *:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+/* Button pulse effect on focus */
+.btn:focus {
+  animation: pulse 0.5s ease-in-out;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+/* ============================================
+   END OF STYLES
+   ============================================ */
