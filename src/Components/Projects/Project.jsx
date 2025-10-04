@@ -2,6 +2,8 @@ import React from 'react';
 import './Projects.css';
 import Image1 from "../../assets/project-thumbnail-1.png"
 import Image2 from "../../assets/project-thumbnail-2.png"
+import Image3 from "../../assets/Screenshot 2025-10-03 162147.png"
+import image4 from "../../assets/Screenshot 2025-10-04 103325.png"
 
 const Project = () => {
 
@@ -11,6 +13,7 @@ const Project = () => {
       name: 'HTML TUTORIAL',
       para: 'CLICK HERE TO VIEW',
       image: Image1,
+      link:"",
       // Or use your own image: image: '/images/html-tutorial.jpg'
     },
     {
@@ -18,19 +21,22 @@ const Project = () => {
       name: 'CSS TUTORIAL',
       para: 'CLICK HERE TO VIEW',
       image: Image2,
+      link:"",
       // Or use your own image: image: '/images/css-tutorial.jpg'
     },
     {
       id: 3,
-      name: 'JAVASCRIPT TUTORIAL',
+      name: 'furniro dubby e-commerce',
       para: 'CLICK HERE TO VIEW',
-      image: 'https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?w=600&h=400&fit=crop',
+      image:image4 ,
+      link:"https://github.com/chialuka112/Furniro",
     },
     {
       id: 4,
-      name: 'REACT TUTORIAL',
+      name: 'REACT TUTORIAL to do',
       para: 'CLICK HERE TO VIEW',
-      image: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=600&h=400&fit=crop',
+      image:Image3,
+      link:"https://github.com/chialuka112/my_keeper_App",
     }
   ];
 
@@ -48,7 +54,10 @@ const Project = () => {
               />
             </div>
             <div className="project-name">
-              <span>{proj.para}</span>
+              <span>{proj.para} </span>
+              <a href= {proj.link}>
+                {proj.name}
+              </a>
             </div>
             <div className="project-label">{proj.name}</div>
           </div>
