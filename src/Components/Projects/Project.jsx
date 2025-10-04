@@ -26,7 +26,7 @@ const Project = () => {
     },
     {
       id: 3,
-      name: 'furniro dubby e-commerce',
+      name: 'furniro dummy e-commerce',
       para: 'CLICK HERE TO VIEW',
       image:image4 ,
       link:"https://github.com/chialuka112/Furniro",
