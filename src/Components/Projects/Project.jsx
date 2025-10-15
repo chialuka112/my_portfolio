@@ -4,6 +4,7 @@ import Image1 from "../../assets/project-thumbnail-1.png"
 import Image2 from "../../assets/project-thumbnail-2.png"
 import Image3 from "../../assets/Screenshot 2025-10-03 162147.png"
 import image4 from "../../assets/Screenshot 2025-10-04 103325.png"
+import Image5 from "../../assets/blog.png"
 
 const Project = () => {
 
@@ -37,6 +38,13 @@ const Project = () => {
       para: 'CLICK HERE TO VIEW',
       image:Image3,
       link:"https://github.com/chialuka112/my_keeper_App",
+    },
+     {
+      id: 5,
+      name: 'Luka Blog',
+      para: 'CLICK HERE TO VIEW',
+      image:Image5,
+      link:"https://github.com/chialuka112/Devblog",
     }
   ];
 
